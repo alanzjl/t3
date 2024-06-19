@@ -1,0 +1,39 @@
+cnc_finray:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerClassificationDataset
+    label_process_func: t3.task_utils.process_cnc_cls_label
+    data_dir: data/FoundationTactile/cnc/cnc_Finray
+    encoder_domain: finray
+    decoder_domain: cls_cnc
+    random_resize_crop: true
+    random_hv_flip_prob: 0.5
+    color_jitter:
+      brightness: 0.4
+      contrast: 0.4
+      saturation: 0.5
+      hue: 0.3
+    img_norm:
+      mean: [0.01000, 0.04490, 0.07897]
+      std: [0.06394, 0.14283, 0.20100]
+
+cnc_finray2:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerClassificationDataset
+    label_process_func: t3.task_utils.process_cnc_cls_label
+    data_dir: data/FoundationTactile/cnc/cnc_Finray2
+    encoder_domain: finray
+    decoder_domain: cls_cnc
+    random_resize_crop: true
+    random_hv_flip_prob: 0.5
+    color_jitter:
+      brightness: 0.4
+      contrast: 0.4
+      saturation: 0.5
+      hue: 0.3
+    img_norm:
+      mean: [0.00139, 0.02078, 0.10659]
+      std: [0.01877, 0.10335, 0.23180]

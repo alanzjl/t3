@@ -1,0 +1,43 @@
+comment: "" # a comment that will be appended to the wandb run name
+
+train:
+  # img_size: 224 # TODO: not being used
+  batch_size: 64
+  dl_weight_type: "root" # how each dataloader is weighted according to number of batches. "equal", "invlinear", "root"
+  num_data_workers: 0
+  wandb: false
+  wandb_entity: "" # your wandb username
+  log_freq: 10 # how often to log to wandb
+  save_model: true
+  finetune_from: "" # path to a model to finetune / load from
+  # Will train for total_train_steps, during which will run eval for test_steps every test_every steps
+  total_train_steps: 100000
+  test_every: 750
+  test_steps: 50
+  generate_mae_visualizations: true
+
+  # whether to freeze the encoder and trunk
+  freeze_encoder: false
+  freeze_trunk: false
+  # whether to unfreeze the encoder and trunk at a given step. only effective when both freeze_encoder and freeze_trunk are true
+  scheduled_unfreeze: false 
+  scheduled_unfreeze_step: 20000
+
+  optimizer:
+    _target_: torch.optim.AdamW
+    lr: 1.0e-4
+    eps: 1.0e-6
+    weight_decay: 0.1
+  # the head and stem are updated at different frequencies. they can be trained with less learning rates.
+  nontrunk_lr_scale: 1.0 # 0.5
+
+  scheduler:
+    _target_: torch.optim.lr_scheduler.CosineAnnealingLR
+    T_max: ${train.total_train_steps}
+    eta_min: 1e-8
+
+defaults:
+  - _self_
+  - network: finetune_exp_cls
+  - datasets: 
+    - eval_ds_cls_wedge

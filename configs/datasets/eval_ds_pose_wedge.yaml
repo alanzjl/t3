@@ -1,0 +1,18 @@
+cnc_wedge:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/cnc/cnc_Wedge
+    encoder_domain: wedge
+    decoder_domain: pose_estimation_3d
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    pose_dim: 3
+    img_norm:
+      mean: [0.24580, 0.30085, 0.35867]
+      std: [0.18356, 0.14779, 0.18460]
+    label_norm:
+      mean: [0.0, 0.0, 0.0]
+      std: [1., 1., 1.]

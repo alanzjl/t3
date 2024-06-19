@@ -1,0 +1,1460 @@
+panda_plierhandle_Mini_Mini_init_pose_2_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/plierhandle_Mini_Mini_init_pose_2_labeled_right
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.20008902251720428
+      - 0.45188993215560913
+      - 0.3884150981903076
+      std:
+      - 0.0935167744755745
+      - 0.10778689384460449
+      - 0.11421193927526474
+panda_blackclampclosed_Mini_Mini_init_pose_2_unlabeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampclosed_Mini_Mini_init_pose_2_unlabeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.3954949975013733
+      - 0.4639855921268463
+      - 0.1686452031135559
+      std:
+      - 0.10122741758823395
+      - 0.08195769041776657
+      - 0.08637329936027527
+panda_tapemeasure_Mini_Mini_init_pose_4_unlabeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/tapemeasure_Mini_Mini_init_pose_4_unlabeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.38624322414398193
+      - 0.46089616417884827
+      - 0.16564254462718964
+      std:
+      - 0.099314846098423
+      - 0.08939406275749207
+      - 0.08396625518798828
+panda_tapemeasure_Mini_Mini_init_pose_1_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/tapemeasure_Mini_Mini_init_pose_1_labeled_right
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.20120294392108917
+      - 0.45461973547935486
+      - 0.40289443731307983
+      std:
+      - 0.09056714922189713
+      - 0.10310269147157669
+      - 0.11357266455888748
+panda_blackclamp_Mini_Mini_init_pose_4_unlabeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclamp_Mini_Mini_init_pose_4_unlabeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.3953430950641632
+      - 0.4642518162727356
+      - 0.17352165281772614
+      std:
+      - 0.102060966193676
+      - 0.08636703342199326
+      - 0.08842217177152634
+panda_wrench_Mini_Mini_init_pose_3_unlabeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/wrench_Mini_Mini_init_pose_3_unlabeled_right
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.4277838170528412
+      - 0.477664589881897
+      - 0.22893105447292328
+      std:
+      - 0.10218437016010284
+      - 0.0821613073348999
+      - 0.10525212436914444
+panda_wrench_Mini_Mini_init_pose_3_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/wrench_Mini_Mini_init_pose_3_labeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.18505525588989258
+      - 0.46165481209754944
+      - 0.39363956451416016
+      std:
+      - 0.09243892878293991
+      - 0.08564689755439758
+      - 0.10034223645925522
+panda_whiteclamped_Mini_Mini_init_pose_3_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/whiteclamped_Mini_Mini_init_pose_3_labeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.1631256639957428
+      - 0.4605971574783325
+      - 0.38980457186698914
+      std:
+      - 0.08099585771560669
+      - 0.09632005542516708
+      - 0.10113855451345444
+panda_blackclampopen_Wedge_Wedge_init_pose_2_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampopen_Wedge_Wedge_init_pose_2_labeled_right
+    encoder_domain: wedge
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.3380172848701477
+      - 0.47884097695350647
+      - 0.6056014895439148
+      std:
+      - 0.09379439055919647
+      - 0.06792450696229935
+      - 0.09998622536659241
+panda_blackclampclosed_Mini_Mini_init_pose_2_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampclosed_Mini_Mini_init_pose_2_labeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.1686350554227829
+      - 0.4638432264328003
+      - 0.3960619270801544
+      std:
+      - 0.08645830303430557
+      - 0.08209220319986343
+      - 0.10128211230039597
+panda_whiteclamped_Mini_Mini_init_pose_1_unlabeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/whiteclamped_Mini_Mini_init_pose_1_unlabeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.38812220096588135
+      - 0.46181628108024597
+      - 0.16482815146446228
+      std:
+      - 0.10021845251321793
+      - 0.08813899755477905
+      - 0.08657365292310715
+panda_printedstrawberry_Mini_Mini_init_pose_1_unlabeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/printedstrawberry_Mini_Mini_init_pose_1_unlabeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.4045741558074951
+      - 0.4641592502593994
+      - 0.18002846837043762
+      std:
+      - 0.10293351113796234
+      - 0.08198181539773941
+      - 0.09223542362451553
+panda_whiteclamped_Mini_Mini_init_pose_2_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/whiteclamped_Mini_Mini_init_pose_2_labeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.16408778727054596
+      - 0.46099334955215454
+      - 0.3893481492996216
+      std:
+      - 0.0828595906496048
+      - 0.09048911184072495
+      - 0.10069560259580612
+panda_wrench_Mini_Mini_init_pose_2_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/wrench_Mini_Mini_init_pose_2_labeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.1785929948091507
+      - 0.4611744284629822
+      - 0.3910849094390869
+      std:
+      - 0.08826912939548492
+      - 0.08346147835254669
+      - 0.10146600008010864
+panda_bluepuzzle_Digit_Digit_init_pose_1_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/bluepuzzle_Digit_Digit_init_pose_1_labeled_left
+    encoder_domain: digit
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.415607213973999
+      - 0.4504442811012268
+      - 0.4284170866012573
+      std:
+      - 0.17182348668575287
+      - 0.07246634364128113
+      - 0.10962973535060883
+panda_blackclampclosed_Mini_Mini_init_pose_1_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampclosed_Mini_Mini_init_pose_1_labeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.169223353266716
+      - 0.46331384778022766
+      - 0.3949589431285858
+      std:
+      - 0.08761817961931229
+      - 0.08419236540794373
+      - 0.10059110075235367
+panda_sw1_Wedge_Wedge_init_pose_1_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/sw1_Wedge_Wedge_init_pose_1_labeled_right
+    encoder_domain: wedge
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.3255307972431183
+      - 0.4876711666584015
+      - 0.6068307757377625
+      std:
+      - 0.10686425119638443
+      - 0.06270773708820343
+      - 0.09278765320777893
+panda_whiteclamped_Mini_Mini_init_pose_1_unlabeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/whiteclamped_Mini_Mini_init_pose_1_unlabeled_right
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.3850466012954712
+      - 0.4510166347026825
+      - 0.20057560503482819
+      std:
+      - 0.11639748513698578
+      - 0.10306169092655182
+      - 0.10151264816522598
+panda_key1_Mini_Mini_init_pose_2_unlabeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/key1_Mini_Mini_init_pose_2_unlabeled_right
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.3899010419845581
+      - 0.45370930433273315
+      - 0.21029366552829742
+      std:
+      - 0.11143054068088531
+      - 0.10520641505718231
+      - 0.10127503424882889
+panda_wrench_Mini_Mini_init_pose_1_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/wrench_Mini_Mini_init_pose_1_labeled_right
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.23141691088676453
+      - 0.4779324531555176
+      - 0.429087370634079
+      std:
+      - 0.1110684871673584
+      - 0.08290808647871017
+      - 0.1018519476056099
+panda_tapemeasure_Mini_Mini_init_pose_2_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/tapemeasure_Mini_Mini_init_pose_2_labeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.15992169082164764
+      - 0.4628112316131592
+      - 0.3933442234992981
+      std:
+      - 0.08002912253141403
+      - 0.0842987671494484
+      - 0.10187464952468872
+panda_tapemeasure_Mini_Mini_init_pose_4_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/tapemeasure_Mini_Mini_init_pose_4_labeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.1657257229089737
+      - 0.4611388146877289
+      - 0.3855637311935425
+      std:
+      - 0.0836595892906189
+      - 0.09059889614582062
+      - 0.0995706096291542
+panda_blackclampclosed_Wedge_Wedge_init_pose_2_unlabeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampclosed_Wedge_Wedge_init_pose_2_unlabeled_right
+    encoder_domain: wedge
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.6133039593696594
+      - 0.4836767315864563
+      - 0.35149848461151123
+      std:
+      - 0.10033681988716125
+      - 0.06599906086921692
+      - 0.09032715111970901
+panda_blackclampedclosed_Mini_Mini_init_pose_4_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampedclosed_Mini_Mini_init_pose_4_labeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.1706845909357071
+      - 0.46344971656799316
+      - 0.39518463611602783
+      std:
+      - 0.08831388503313065
+      - 0.08262699842453003
+      - 0.10061244666576385
+panda_blackmarker_Digit_Digit_init_pose_1_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackmarker_Digit_Digit_init_pose_1_labeled_right
+    encoder_domain: digit
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.3597746789455414
+      - 0.4220910668373108
+      - 0.3863634467124939
+      std:
+      - 0.18637828528881073
+      - 0.08898860961198807
+      - 0.11469487100839615
+panda_wrench_Mini_Mini_init_pose_2_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/wrench_Mini_Mini_init_pose_2_labeled_right
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.2248988300561905
+      - 0.4762556552886963
+      - 0.4289960265159607
+      std:
+      - 0.1040118858218193
+      - 0.07802072912454605
+      - 0.1032293438911438
+panda_blackclampopen_Wedge_Wedge_init_pose_3_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampopen_Wedge_Wedge_init_pose_3_labeled_left
+    encoder_domain: wedge
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.48467275500297546
+      - 0.44754698872566223
+      - 0.6166472434997559
+      std:
+      - 0.21966536343097687
+      - 0.1536581665277481
+      - 0.13042406737804413
+panda_blackclampopen_Wedge_Wedge_init_pose_3_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampopen_Wedge_Wedge_init_pose_3_labeled_right
+    encoder_domain: wedge
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.33281007409095764
+      - 0.48048314452171326
+      - 0.6125444173812866
+      std:
+      - 0.10064134001731873
+      - 0.06831198930740356
+      - 0.10051707178354263
+panda_foldingknife_Mini_Mini_init_pose_1_unlabeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/foldingknife_Mini_Mini_init_pose_1_unlabeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.3975468873977661
+      - 0.463771790266037
+      - 0.17290450632572174
+      std:
+      - 0.10251462459564209
+      - 0.0851563811302185
+      - 0.08740653842687607
+panda_whiteclamped_Mini_Mini_init_pose_2_unlabeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/whiteclamped_Mini_Mini_init_pose_2_unlabeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.38937780261039734
+      - 0.46052396297454834
+      - 0.16402117908000946
+      std:
+      - 0.10068358480930328
+      - 0.09074103832244873
+      - 0.08270055800676346
+panda_tapemeasure_Mini_Mini_init_pose_2_unlabeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/tapemeasure_Mini_Mini_init_pose_2_unlabeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.3933393955230713
+      - 0.46296510100364685
+      - 0.15962016582489014
+      std:
+      - 0.10179748386144638
+      - 0.08526957035064697
+      - 0.08000123500823975
+panda_gsminibox_Digit_Digit_init_pose_1_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/gsminibox_Digit_Digit_init_pose_1_labeled_left
+    encoder_domain: digit
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.42016997933387756
+      - 0.457429975271225
+      - 0.4393713176250458
+      std:
+      - 0.17391929030418396
+      - 0.0702960342168808
+      - 0.09980781376361847
+panda_bluepuzzle_Digit_Digit_init_pose_2_unlabeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/bluepuzzle_Digit_Digit_init_pose_2_unlabeled_left
+    encoder_domain: digit
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.4340957701206207
+      - 0.4531683325767517
+      - 0.41754886507987976
+      std:
+      - 0.10801751911640167
+      - 0.07391280680894852
+      - 0.17211554944515228
+panda_blackclampedclosed_Mini_Mini_init_pose_5_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampedclosed_Mini_Mini_init_pose_5_labeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.173812136054039
+      - 0.4640612006187439
+      - 0.3990507125854492
+      std:
+      - 0.08795560896396637
+      - 0.08184106647968292
+      - 0.10320103168487549
+panda_blackclampedclosed_Mini_Mini_init_pose_5_unlabeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampedclosed_Mini_Mini_init_pose_5_unlabeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.39938369393348694
+      - 0.4638054668903351
+      - 0.1750151515007019
+      std:
+      - 0.1036284938454628
+      - 0.08192924410104752
+      - 0.08826149255037308
+panda_blackclamp_Mini_Mini_init_pose_1_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclamp_Mini_Mini_init_pose_1_labeled_right
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.2245451956987381
+      - 0.47765594720840454
+      - 0.42400431632995605
+      std:
+      - 0.10415098071098328
+      - 0.08063487708568573
+      - 0.09976319223642349
+panda_printedstrawberry_Mini_Mini_init_pose_1_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/printedstrawberry_Mini_Mini_init_pose_1_labeled_right
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.2274872362613678
+      - 0.47810986638069153
+      - 0.4352235794067383
+      std:
+      - 0.1063542366027832
+      - 0.07576030492782593
+      - 0.10254159569740295
+panda_wrench_Mini_Mini_init_pose_4_unlabeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/wrench_Mini_Mini_init_pose_4_unlabeled_right
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.42842423915863037
+      - 0.47662296891212463
+      - 0.22456088662147522
+      std:
+      - 0.10412823408842087
+      - 0.07847537100315094
+      - 0.10150662809610367
+panda_bluepuzzle_Digit_Digit_init_pose_2_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/bluepuzzle_Digit_Digit_init_pose_2_labeled_right
+    encoder_domain: digit
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.35957071185112
+      - 0.42026254534721375
+      - 0.38767707347869873
+      std:
+      - 0.19251394271850586
+      - 0.09495128691196442
+      - 0.13183341920375824
+panda_greenwirestripper_Digit_Digit_init_pose_1_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/greenwirestripper_Digit_Digit_init_pose_1_labeled_right
+    encoder_domain: digit
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.3531765341758728
+      - 0.4205916225910187
+      - 0.37851110100746155
+      std:
+      - 0.18434672057628632
+      - 0.0847434252500534
+      - 0.11861341446638107
+panda_gsminibox_Digit_Digit_init_pose_1_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/gsminibox_Digit_Digit_init_pose_1_labeled_right
+    encoder_domain: digit
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.355375200510025
+      - 0.4183369576931
+      - 0.377322256565094
+      std:
+      - 0.18658578395843506
+      - 0.08773398399353027
+      - 0.12443897128105164
+panda_screwdriver_Wedge_Wedge_init_pose_1_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/screwdriver_Wedge_Wedge_init_pose_1_labeled_right
+    encoder_domain: wedge
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.3298151195049286
+      - 0.4918084740638733
+      - 0.6021385788917542
+      std:
+      - 0.11251013725996017
+      - 0.06601256132125854
+      - 0.0948595181107521
+panda_key1_Mini_Mini_init_pose_2_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/key1_Mini_Mini_init_pose_2_labeled_right
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.21065731346607208
+      - 0.4538404047489166
+      - 0.3893325626850128
+      std:
+      - 0.10152407735586166
+      - 0.10455714911222458
+      - 0.11116821318864822
+panda_printedstrawberry_Mini_Mini_init_pose_2_unlabeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/printedstrawberry_Mini_Mini_init_pose_2_unlabeled_right
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.431567519903183
+      - 0.47790229320526123
+      - 0.21724635362625122
+      std:
+      - 0.10149955749511719
+      - 0.0763324499130249
+      - 0.09956369549036026
+panda_foldingknife_Mini_Mini_init_pose_2_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/foldingknife_Mini_Mini_init_pose_2_labeled_right
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.21599607169628143
+      - 0.45426133275032043
+      - 0.39074206352233887
+      std:
+      - 0.10460741072893143
+      - 0.10708241909742355
+      - 0.11038181185722351
+panda_blackclampclosed_Wedge_Wedge_init_pose_1_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampclosed_Wedge_Wedge_init_pose_1_labeled_left
+    encoder_domain: wedge
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.4933076500892639
+      - 0.4474165737628937
+      - 0.6276432275772095
+      std:
+      - 0.21579772233963013
+      - 0.14672262966632843
+      - 0.12719814479351044
+panda_blackclampclosed_Mini_Mini_init_pose_2_unlabeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampclosed_Mini_Mini_init_pose_2_unlabeled_right
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.3888871967792511
+      - 0.4509487450122833
+      - 0.20737597346305847
+      std:
+      - 0.10881992429494858
+      - 0.09730194509029388
+      - 0.09841039031744003
+panda_redpunch_Digit_Digit_init_pose_1_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/redpunch_Digit_Digit_init_pose_1_labeled_left
+    encoder_domain: digit
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.42051586508750916
+      - 0.45165184140205383
+      - 0.43533456325531006
+      std:
+      - 0.16668295860290527
+      - 0.07338855415582657
+      - 0.10228043049573898
+panda_blackclampclosed_Mini_Mini_init_pose_1_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampclosed_Mini_Mini_init_pose_1_labeled_right
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.20969408750534058
+      - 0.45107850432395935
+      - 0.3844548761844635
+      std:
+      - 0.10364897549152374
+      - 0.10086628794670105
+      - 0.10830090194940567
+panda_whiteclamped_Mini_Mini_init_pose_1_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/whiteclamped_Mini_Mini_init_pose_1_labeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.16491958498954773
+      - 0.4617471396923065
+      - 0.38903728127479553
+      std:
+      - 0.08577835559844971
+      - 0.08783769607543945
+      - 0.1000705361366272
+panda_tapemeasure_Mini_Mini_init_pose_2_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/tapemeasure_Mini_Mini_init_pose_2_labeled_right
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.18961915373802185
+      - 0.45349735021591187
+      - 0.385844349861145
+      std:
+      - 0.09253636002540588
+      - 0.10180454701185226
+      - 0.10736275464296341
+panda_foldingknife_Mini_Mini_init_pose_1_unlabeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/foldingknife_Mini_Mini_init_pose_1_unlabeled_right
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.3877771496772766
+      - 0.4527069926261902
+      - 0.21473664045333862
+      std:
+      - 0.11314700543880463
+      - 0.10637179017066956
+      - 0.10383694618940353
+panda_blackclampopen_Wedge_Wedge_init_pose_2_unlabeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampopen_Wedge_Wedge_init_pose_2_unlabeled_left
+    encoder_domain: wedge
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.61229407787323
+      - 0.44281521439552307
+      - 0.49650123715400696
+      std:
+      - 0.12560677528381348
+      - 0.14897708594799042
+      - 0.21840284764766693
+panda_wrench_Mini_Mini_init_pose_3_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/wrench_Mini_Mini_init_pose_3_labeled_right
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.2302057147026062
+      - 0.4775136113166809
+      - 0.4285425841808319
+      std:
+      - 0.10802163183689117
+      - 0.08327475935220718
+      - 0.10208170115947723
+panda_blackclampclosed_Wedge_Wedge_init_pose_2_unlabeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampclosed_Wedge_Wedge_init_pose_2_unlabeled_left
+    encoder_domain: wedge
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.6151835322380066
+      - 0.44438979029655457
+      - 0.48758000135421753
+      std:
+      - 0.12745927274227142
+      - 0.1508602350950241
+      - 0.21774451434612274
+panda_blackclamp_Mini_Mini_init_pose_3_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclamp_Mini_Mini_init_pose_3_labeled_right
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.21722766757011414
+      - 0.4783915579319
+      - 0.42504048347473145
+      std:
+      - 0.10017775744199753
+      - 0.08114976435899734
+      - 0.10171103477478027
+panda_wrench_Mini_Mini_init_pose_3_unlabeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/wrench_Mini_Mini_init_pose_3_unlabeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.39272958040237427
+      - 0.4612434208393097
+      - 0.18376316130161285
+      std:
+      - 0.1005229726433754
+      - 0.08729568123817444
+      - 0.0924391970038414
+panda_blackclampedclosed_Mini_Mini_init_pose_4_unlabeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampedclosed_Mini_Mini_init_pose_4_unlabeled_right
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.38955527544021606
+      - 0.45096349716186523
+      - 0.20943434536457062
+      std:
+      - 0.10890234261751175
+      - 0.09823400527238846
+      - 0.1010541096329689
+panda_1515extrusion_Digit_Digit_init_pose_1_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/1515extrusion_Digit_Digit_init_pose_1_labeled_right
+    encoder_domain: digit
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.3591153621673584
+      - 0.4233532249927521
+      - 0.38153401017189026
+      std:
+      - 0.19234654307365417
+      - 0.08779609203338623
+      - 0.11773381382226944
+panda_wrench_Digit_Digit_init_pose_1_unlabeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/wrench_Digit_Digit_init_pose_1_unlabeled_right
+    encoder_domain: digit
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.3753100633621216
+      - 0.4188637435436249
+      - 0.3525850772857666
+      std:
+      - 0.11531968414783478
+      - 0.09250959008932114
+      - 0.17116679251194
+panda_tapemeasure_Mini_Mini_init_pose_1_unlabeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/tapemeasure_Mini_Mini_init_pose_1_unlabeled_right
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.4031999111175537
+      - 0.45484718680381775
+      - 0.20122672617435455
+      std:
+      - 0.11352016776800156
+      - 0.10363803803920746
+      - 0.08981042355298996
+panda_blackclampclosed_Mini_Mini_init_pose_3_unlabeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampclosed_Mini_Mini_init_pose_3_unlabeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.3964757025241852
+      - 0.4630371928215027
+      - 0.1693471372127533
+      std:
+      - 0.1009851023554802
+      - 0.08159028738737106
+      - 0.08761016279459
+panda_foldingknife_Mini_Mini_init_pose_2_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/foldingknife_Mini_Mini_init_pose_2_labeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.1768958568572998
+      - 0.4636267125606537
+      - 0.4011465311050415
+      std:
+      - 0.09059955924749374
+      - 0.08817513287067413
+      - 0.10274796187877655
+panda_usbdouble_Wedge_Wedge_init_pose_1_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/usbdouble_Wedge_Wedge_init_pose_1_labeled_right
+    encoder_domain: wedge
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.3292597830295563
+      - 0.48953482508659363
+      - 0.6061275005340576
+      std:
+      - 0.10240361839532852
+      - 0.07311265915632248
+      - 0.09678319096565247
+panda_key1_Wedge_Wedge_init_pose_1_unlabeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/key1_Wedge_Wedge_init_pose_1_unlabeled_right
+    encoder_domain: wedge
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.6052972078323364
+      - 0.48919862508773804
+      - 0.3431081473827362
+      std:
+      - 0.09649847447872162
+      - 0.06806065887212753
+      - 0.094010129570961
+panda_blackmarker_Digit_Digit_init_pose_1_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackmarker_Digit_Digit_init_pose_1_labeled_left
+    encoder_domain: digit
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.4221748411655426
+      - 0.4562465250492096
+      - 0.44080808758735657
+      std:
+      - 0.17191651463508606
+      - 0.06988728791475296
+      - 0.09948897361755371
+panda_blackclampopen_Wedge_Wedge_init_pose_2_unlabeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampopen_Wedge_Wedge_init_pose_2_unlabeled_right
+    encoder_domain: wedge
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.6058911681175232
+      - 0.4799671769142151
+      - 0.3391672372817993
+      std:
+      - 0.09989871084690094
+      - 0.06816552579402924
+      - 0.0949101373553276
+panda_scissor_Wedge_Wedge_init_pose_1_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/scissor_Wedge_Wedge_init_pose_1_labeled_right
+    encoder_domain: wedge
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.34175005555152893
+      - 0.4884255528450012
+      - 0.600091814994812
+      std:
+      - 0.10352430492639542
+      - 0.06815532594919205
+      - 0.09612949192523956
+panda_blackclampopen_Wedge_Wedge_init_pose_3_unlabeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampopen_Wedge_Wedge_init_pose_3_unlabeled_right
+    encoder_domain: wedge
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.6126396059989929
+      - 0.47974884510040283
+      - 0.33253610134124756
+      std:
+      - 0.1009967252612114
+      - 0.0669657438993454
+      - 0.10092246532440186
+panda_printedlego_Mini_Mini_init_pose_1_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/printedlego_Mini_Mini_init_pose_1_labeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.17131464183330536
+      - 0.4631294906139374
+      - 0.3977237939834595
+      std:
+      - 0.08887288719415665
+      - 0.08244819194078445
+      - 0.10192295908927917
+panda_blackyellowplier_Digit_Digit_init_pose_1_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/blackyellowplier_Digit_Digit_init_pose_1_labeled_left
+    encoder_domain: digit
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.4254843294620514
+      - 0.45435407757759094
+      - 0.4383212625980377
+      std:
+      - 0.16409319639205933
+      - 0.07379567623138428
+      - 0.09885196387767792
+panda_key1_Mini_Mini_init_pose_1_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/key1_Mini_Mini_init_pose_1_labeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.1719101518392563
+      - 0.46257463097572327
+      - 0.3945608139038086
+      std:
+      - 0.09240737557411194
+      - 0.09333918243646622
+      - 0.10267537087202072
+panda_plierhandle_Mini_Mini_init_pose_1_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: data/FoundationTactile/panda_warped/plierhandle_Mini_Mini_init_pose_1_labeled_left
+    encoder_domain: mini
+    decoder_domain: mae_recon_single
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean:
+      - 0.15979187190532684
+      - 0.46248751878738403
+      - 0.39013034105300903
+      std:
+      - 0.08085481077432632
+      - 0.08365251123905182
+      - 0.09962265193462372

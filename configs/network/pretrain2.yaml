@@ -1,0 +1,208 @@
+# Network configuration for pretraining II
+
+# Network size corresponds to "t3_medium" but can be overwritten in code
+patch_size: 16
+encoder_embed_dim: 768
+encoder_heads: 12
+pooling: "none"
+encoder_depth: 3
+trunk_depth: 9
+
+encoders:
+  gs_360_v2:
+    _target_: t3.models.ViTEncoder
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: ${network.encoder_depth}
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+  
+  gs_green:
+    _target_: t3.models.ViTEncoder
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: ${network.encoder_depth}
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+  
+  gs_black: # for objectfolder-real
+    _target_: t3.models.ViTEncoder
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: ${network.encoder_depth}
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+
+  gs_tag: # for touch-and-go
+    _target_: t3.models.ViTEncoder
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: ${network.encoder_depth}
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+  
+  digit:
+    _target_: t3.models.ViTEncoder
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: ${network.encoder_depth}
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+  
+  mini:
+    _target_: t3.models.ViTEncoder
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: ${network.encoder_depth}
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+  
+  wedge:
+    _target_: t3.models.ViTEncoder
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: ${network.encoder_depth}
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+  
+  finray:
+    _target_: t3.models.ViTEncoder
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: ${network.encoder_depth}
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+
+shared_trunk:
+  _target_: t3.models.TransformerTrunk
+  embed_dim: ${network.encoder_embed_dim}
+  depth: ${network.trunk_depth}
+  num_heads: ${network.encoder_heads}
+  mlp_ratio: 4.
+  pooling_type: ${network.pooling}
+
+decoders:
+  pose_estimation_6d_mini:
+    _target_: t3.models.CNNFCDecoder
+    inplanes: ${network.encoder_embed_dim}
+    fc_hidden_dims: [256, 64]
+    output_dim: 9 # using d9 representation
+    stride: 2
+    dropout_p: 0.1
+    tanh_end: false
+    transformer_upstream: true
+    loss_func:
+      _target_: torch.nn.MSELoss
+  
+  pose_estimation_6d_wedge:
+    _target_: t3.models.CNNFCDecoder
+    inplanes: ${network.encoder_embed_dim}
+    fc_hidden_dims: [256, 64]
+    output_dim: 9 # using d9 representation
+    stride: 2
+    dropout_p: 0.1
+    tanh_end: false
+    transformer_upstream: true
+    loss_func:
+      _target_: torch.nn.MSELoss
+
+  pose_estimation_6d_digit:
+    _target_: t3.models.CNNFCDecoder
+    inplanes: ${network.encoder_embed_dim}
+    fc_hidden_dims: [256, 64]
+    output_dim: 9 # using d9 representation
+    stride: 2
+    dropout_p: 0.1
+    tanh_end: false
+    transformer_upstream: true
+    loss_func:
+      _target_: torch.nn.MSELoss
+  
+  variance_estimation:
+    _target_: t3.models.MLPDecoder
+    input_dim: ${network.encoder_embed_dim}
+    output_dim: 1
+    hidden_dims: [256, 128, 64]
+    dropout_p: 0.1
+    transformer_upstream: true
+    pooling_type: global
+    loss_func:
+      _target_: t3.models.VarianceScaledLoss
+  
+  cls_touch_and_go:
+    _target_: t3.models.MLPDecoder
+    input_dim: ${network.encoder_embed_dim}
+    output_dim: 22
+    hidden_dims: [256, 128, 64]
+    dropout_p: 0.1
+    transformer_upstream: true
+    pooling_type: cls
+    loss_func:
+      _target_: torch.nn.CrossEntropyLoss
+  
+  cls_calandra17:
+    _target_: t3.models.MLPDecoder
+    input_dim: ${network.encoder_embed_dim}
+    output_dim: 106
+    hidden_dims: [256, 128, 64]
+    dropout_p: 0.1
+    transformer_upstream: true
+    pooling_type: cls
+    loss_func:
+      _target_: torch.nn.CrossEntropyLoss
+  
+  cls_yuan18_textile_type:
+    _target_: t3.models.MLPDecoder
+    input_dim: ${network.encoder_embed_dim}
+    output_dim: 20
+    hidden_dims: [256, 128, 64]
+    dropout_p: 0.1
+    transformer_upstream: true
+    pooling_type: cls
+    loss_func:
+      _target_: torch.nn.CrossEntropyLoss
+  
+  cls_yuan18_smoothness:
+    _target_: t3.models.MLPDecoder
+    input_dim: ${network.encoder_embed_dim}
+    output_dim: 5
+    hidden_dims: [256, 128, 64]
+    dropout_p: 0.1
+    transformer_upstream: true
+    pooling_type: cls
+    loss_func:
+      _target_: torch.nn.CrossEntropyLoss
+  
+  cls_yuan18_fuzziness:
+    _target_: t3.models.MLPDecoder
+    input_dim: ${network.encoder_embed_dim}
+    output_dim: 4
+    hidden_dims: [256, 128, 64]
+    dropout_p: 0.1
+    transformer_upstream: true
+    pooling_type: cls
+    loss_func:
+      _target_: torch.nn.CrossEntropyLoss
+  
+  cls_objectfolder:
+    _target_: t3.models.MLPDecoder
+    input_dim: ${network.encoder_embed_dim}
+    output_dim: 100
+    hidden_dims: [256, 128, 64]
+    dropout_p: 0.1
+    transformer_upstream: true
+    pooling_type: cls
+    loss_func:
+      _target_: torch.nn.CrossEntropyLoss
+  
+  pose_estimation_3d:
+    _target_: t3.models.CNNFCDecoder
+    inplanes: ${network.encoder_embed_dim}
+    fc_hidden_dims: [256, 64]
+    output_dim: 3 # using d9 representation
+    stride: 2
+    dropout_p: 0.1
+    tanh_end: false
+    transformer_upstream: true
+    loss_func:
+      _target_: torch.nn.MSELoss

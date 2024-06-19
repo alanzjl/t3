@@ -1,0 +1,18 @@
+cnc_svelte:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/cnc/cnc_Svelte
+    encoder_domain: svelte
+    decoder_domain: pose_estimation_3d
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    pose_dim: 3
+    img_norm:
+      mean: [0.41175, 0.26801, 0.02041]
+      std: [0.26641, 0.19636, 0.09754]
+    label_norm:
+      mean: [0.0, 0.0, 0.0]
+      std: [1., 1., 1.]

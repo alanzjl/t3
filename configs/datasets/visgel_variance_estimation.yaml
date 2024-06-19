@@ -1,0 +1,14 @@
+visgel_variance_estimation:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerVarianceDataset
+    data_dir: "data/FoundationTactile/visgel_downsampled"
+    encoder_domain: "gs_green"
+    decoder_domain: "variance_estimation"
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean: [0.36917, 0.51738, 0.51782]
+      std: [0.13530, 0.11039, 0.10001]

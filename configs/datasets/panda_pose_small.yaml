@@ -1,0 +1,1470 @@
+panda_plierhandle_Mini_Mini_init_pose_2_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/plierhandle_Mini_Mini_init_pose_2_labeled_right
+    encoder_domain: mini
+    decoder_domain: pose_estimation_6d_mini
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.20008902251720428
+      - 0.45188993215560913
+      - 0.3884150981903076
+      std:
+      - 0.0935167744755745
+      - 0.10778689384460449
+      - 0.11421193927526474
+    pose_dim: 6
+    label_norm:
+      mean:
+      - -0.15675186469671343
+      - 0.04399038998037004
+      - -0.1050130393126528
+      - 0.9943466542322971
+      - 0.0008868597450503792
+      - -0.00011336788396778699
+      - -0.0006698637651647672
+      - 0.9972622822990219
+      - -0.00020416109740716882
+      std:
+      - 5.971103943761168
+      - 1.331242857077631
+      - 6.08350356351967
+      - 0.0059495380285653175
+      - 0.05342712707393154
+      - 0.09156460524907627
+      - 0.053391284087956896
+      - 0.002542146197626292
+      - 0.05109166449305446
+panda_tapemeasure_Mini_Mini_init_pose_1_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/tapemeasure_Mini_Mini_init_pose_1_labeled_right
+    encoder_domain: mini
+    decoder_domain: pose_estimation_6d_mini
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.20120294392108917
+      - 0.45461973547935486
+      - 0.40289443731307983
+      std:
+      - 0.09056714922189713
+      - 0.10310269147157669
+      - 0.11357266455888748
+    pose_dim: 6
+    label_norm:
+      mean:
+      - 0.02034688650314521
+      - 0.03713440204487468
+      - 0.00440071257485996
+      - 0.9944942770353138
+      - -0.0005415890388403902
+      - -0.0011174590860192277
+      - 0.0004096124064047694
+      - 0.9974483391789026
+      - -0.0001237663510118323
+      std:
+      - 5.067587193993971
+      - 1.1108629802232852
+      - 4.875268166202754
+      - 0.005732211023831211
+      - 0.05161775554368811
+      - 0.09100736222922533
+      - 0.05168227745257386
+      - 0.0023466588504617125
+      - 0.049194135406253135
+panda_wrench_Mini_Mini_init_pose_3_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/wrench_Mini_Mini_init_pose_3_labeled_left
+    encoder_domain: mini
+    decoder_domain: pose_estimation_6d_mini
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.18505525588989258
+      - 0.46165481209754944
+      - 0.39363956451416016
+      std:
+      - 0.09243892878293991
+      - 0.08564689755439758
+      - 0.10034223645925522
+    pose_dim: 6
+    label_norm:
+      mean:
+      - 0.3854805215053608
+      - 0.14664012492536652
+      - -1.1925388435084976
+      - 0.9745426784195225
+      - -0.0017601731693582688
+      - -0.00054353555292542
+      - -0.0014116861365020908
+      - 0.9988721622444348
+      - 0.0006544317586727912
+      std:
+      - 11.99010801273706
+      - 1.7488405436444125
+      - 6.581329191232844
+      - 0.03222178242792086
+      - 0.029320192114102743
+      - 0.21992102530226204
+      - 0.029409274194765557
+      - 0.0010395741424025866
+      - 0.03722897032412525
+panda_whiteclamped_Mini_Mini_init_pose_3_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/whiteclamped_Mini_Mini_init_pose_3_labeled_left
+    encoder_domain: mini
+    decoder_domain: pose_estimation_6d_mini
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.1631256639957428
+      - 0.4605971574783325
+      - 0.38980457186698914
+      std:
+      - 0.08099585771560669
+      - 0.09632005542516708
+      - 0.10113855451345444
+    pose_dim: 6
+    label_norm:
+      mean:
+      - 0.0263971372455494
+      - -0.028940444948274937
+      - -0.036435406118235085
+      - 0.9943644244877369
+      - 0.00045130377352753994
+      - 0.0005075821255996893
+      - 0.00014815142515259587
+      - 0.9977889834454243
+      - 8.188247532068059e-05
+      std:
+      - 4.066974921781457
+      - 1.1352876199025574
+      - 5.833449573610665
+      - 0.006029264150721513
+      - 0.04698892356106109
+      - 0.09483996538818344
+      - 0.046986639191661274
+      - 0.0020256916512535264
+      - 0.046960282922552395
+panda_blackclampopen_Wedge_Wedge_init_pose_2_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampopen_Wedge_Wedge_init_pose_2_labeled_right
+    encoder_domain: wedge
+    decoder_domain: pose_estimation_6d_wedge
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.3380172848701477
+      - 0.47884097695350647
+      - 0.6056014895439148
+      std:
+      - 0.09379439055919647
+      - 0.06792450696229935
+      - 0.09998622536659241
+    pose_dim: 6
+    label_norm:
+      mean:
+      - 0.08503922654492149
+      - -0.027895923186730336
+      - -0.0025981001835592
+      - 0.9944667253720554
+      - -0.0004057919671840855
+      - -0.00016605103800697646
+      - 0.00034251975245992516
+      - 0.9978383673663503
+      - -0.00040685495742011384
+      std:
+      - 4.967034401214392
+      - 0.7187905938116786
+      - 4.780842380169294
+      - 0.005948019709908594
+      - 0.047564299518914485
+      - 0.0934772611949805
+      - 0.047516747411511746
+      - 0.002169133917670609
+      - 0.045340526401822574
+panda_blackclampclosed_Mini_Mini_init_pose_2_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampclosed_Mini_Mini_init_pose_2_labeled_left
+    encoder_domain: mini
+    decoder_domain: pose_estimation_6d_mini
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.1686350554227829
+      - 0.4638432264328003
+      - 0.3960619270801544
+      std:
+      - 0.08645830303430557
+      - 0.08209220319986343
+      - 0.10128211230039597
+    pose_dim: 6
+    label_norm:
+      mean:
+      - -0.04905676163431305
+      - -0.06311905888720301
+      - -0.08494258872998893
+      - 0.9943039963765957
+      - -0.0005293622367464996
+      - -0.00039731947200713285
+      - -3.678218291492151e-06
+      - 0.9970889004269154
+      - 0.0011727342200878782
+      std:
+      - 4.5801514585116125
+      - 1.6302473406448776
+      - 5.40610395164909
+      - 0.006107427737718395
+      - 0.05432690417282823
+      - 0.09148995306488396
+      - 0.054367011051478176
+      - 0.0027265626670446904
+      - 0.05337736684879597
+panda_whiteclamped_Mini_Mini_init_pose_2_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/whiteclamped_Mini_Mini_init_pose_2_labeled_left
+    encoder_domain: mini
+    decoder_domain: pose_estimation_6d_mini
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.16408778727054596
+      - 0.46099334955215454
+      - 0.3893481492996216
+      std:
+      - 0.0828595906496048
+      - 0.09048911184072495
+      - 0.10069560259580612
+    pose_dim: 6
+    label_norm:
+      mean:
+      - 0.09677616344525924
+      - 0.05768582003533213
+      - 0.032375027165807826
+      - 0.9942257156645903
+      - -0.00131579356512245
+      - -0.0007008750878942005
+      - 0.0002564099937649946
+      - 0.9968474787811347
+      - -0.0010343932684030565
+      std:
+      - 5.2922974259810545
+      - 1.5339792701601604
+      - 4.4132406419291055
+      - 0.006008175744288604
+      - 0.053644320943043354
+      - 0.09273183071323249
+      - 0.05354216603378422
+      - 0.003764177580574345
+      - 0.058421192693487264
+panda_wrench_Mini_Mini_init_pose_2_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/wrench_Mini_Mini_init_pose_2_labeled_left
+    encoder_domain: mini
+    decoder_domain: pose_estimation_6d_mini
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.1785929948091507
+      - 0.4611744284629822
+      - 0.3910849094390869
+      std:
+      - 0.08826912939548492
+      - 0.08346147835254669
+      - 0.10146600008010864
+    pose_dim: 6
+    label_norm:
+      mean:
+      - 0.21366987844380136
+      - -0.047979247732123094
+      - 0.017321725366400222
+      - 0.992351823295141
+      - -9.505975634950677e-05
+      - 0.0022434289245774515
+      - -0.0003982101172642004
+      - 0.9985348491891367
+      - 0.0010439634495225513
+      std:
+      - 3.577218513017354
+      - 1.0282499590931695
+      - 9.556232701261049
+      - 0.0086313980569127
+      - 0.037676655232116656
+      - 0.11721256507458908
+      - 0.037670116110552564
+      - 0.0013216735864413208
+      - 0.038808788372941105
+panda_bluepuzzle_Digit_Digit_init_pose_1_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/bluepuzzle_Digit_Digit_init_pose_1_labeled_left
+    encoder_domain: digit
+    decoder_domain: pose_estimation_6d_digit
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.415607213973999
+      - 0.4504442811012268
+      - 0.4284170866012573
+      std:
+      - 0.17182348668575287
+      - 0.07246634364128113
+      - 0.10962973535060883
+    pose_dim: 6
+    label_norm:
+      mean:
+      - 0.035100059049758554
+      - 0.02860355261194965
+      - -0.08870238160182123
+      - 0.990336138036527
+      - 0.0013115043558598809
+      - 0.002445038896534888
+      - 0.0005881297415883378
+      - 0.9969558676584085
+      - -0.0010429664740470863
+      std:
+      - 3.6553624147567136
+      - 1.646172175154238
+      - 8.730180987984767
+      - 0.011019725845335672
+      - 0.04232218937606858
+      - 0.13158280042896844
+      - 0.04238171824206249
+      - 0.0031147207027542962
+      - 0.06535788200054947
+panda_blackclampclosed_Mini_Mini_init_pose_1_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampclosed_Mini_Mini_init_pose_1_labeled_left
+    encoder_domain: mini
+    decoder_domain: pose_estimation_6d_mini
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.169223353266716
+      - 0.46331384778022766
+      - 0.3949589431285858
+      std:
+      - 0.08761817961931229
+      - 0.08419236540794373
+      - 0.10059110075235367
+    pose_dim: 6
+    label_norm:
+      mean:
+      - 0.04630160039467331
+      - -0.004122705755250308
+      - -0.15998009981127728
+      - 0.9940815336092881
+      - 0.0003310334186459047
+      - 0.001696414066661631
+      - -0.00023807128242002952
+      - 0.9975228558260569
+      - 0.0005878953513142037
+      std:
+      - 5.448065354454616
+      - 1.3706433503676485
+      - 6.075354366550793
+      - 0.00614371057763791
+      - 0.051841732801095906
+      - 0.09525548117408117
+      - 0.051770616130938835
+      - 0.002255417261240892
+      - 0.04756538872079547
+panda_sw1_Wedge_Wedge_init_pose_1_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/sw1_Wedge_Wedge_init_pose_1_labeled_right
+    encoder_domain: wedge
+    decoder_domain: pose_estimation_6d_wedge
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.3255307972431183
+      - 0.4876711666584015
+      - 0.6068307757377625
+      std:
+      - 0.10686425119638443
+      - 0.06270773708820343
+      - 0.09278765320777893
+    pose_dim: 6
+    label_norm:
+      mean:
+      - 0.0003845878066908782
+      - 0.013115530045048207
+      - -4.9356985107898764e-05
+      - 0.9951959251662176
+      - 0.0014480170504286103
+      - -0.0004127752034592724
+      - -0.0003842014087805512
+      - 0.9971657346244983
+      - 0.000376902160062262
+      std:
+      - 2.684217459503337
+      - 0.6779406678510058
+      - 1.2889803016444705
+      - 0.004860340146912017
+      - 0.05401437853125184
+      - 0.08149618028685869
+      - 0.054047070253338846
+      - 0.002511888857862391
+      - 0.05227631046871516
+panda_wrench_Mini_Mini_init_pose_1_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/wrench_Mini_Mini_init_pose_1_labeled_right
+    encoder_domain: mini
+    decoder_domain: pose_estimation_6d_mini
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.23141691088676453
+      - 0.4779324531555176
+      - 0.429087370634079
+      std:
+      - 0.1110684871673584
+      - 0.08290808647871017
+      - 0.1018519476056099
+    pose_dim: 6
+    label_norm:
+      mean:
+      - 0.08079811869418808
+      - -0.007204672426819951
+      - -0.06241023237290201
+      - 0.9887246633406165
+      - -0.0010208378107879777
+      - 0.0014971362761031812
+      - 0.0010220837111166938
+      - 0.9986586396471115
+      - -0.0003632881265904209
+      std:
+      - 3.4894020342454226
+      - 1.0290241844456964
+      - 8.18040910906447
+      - 0.013218533111221422
+      - 0.0368181204112768
+      - 0.14453357038066986
+      - 0.03690664909292048
+      - 0.001340556820791331
+      - 0.036274605234482206
+panda_tapemeasure_Mini_Mini_init_pose_2_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/tapemeasure_Mini_Mini_init_pose_2_labeled_left
+    encoder_domain: mini
+    decoder_domain: pose_estimation_6d_mini
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.15992169082164764
+      - 0.4628112316131592
+      - 0.3933442234992981
+      std:
+      - 0.08002912253141403
+      - 0.0842987671494484
+      - 0.10187464952468872
+    pose_dim: 6
+    label_norm:
+      mean:
+      - -0.09259390003410573
+      - -0.015312230850815905
+      - -0.056174594225980465
+      - 0.9950313423679973
+      - 0.0003202422946629496
+      - -0.0025599458660231647
+      - -0.0006296135622184693
+      - 0.9970571968042252
+      - 1.7194110746093348e-05
+      std:
+      - 4.730362635225553
+      - 1.2735329225748713
+      - 5.341673253550966
+      - 0.004949446021729795
+      - 0.05314489051139138
+      - 0.08400652012782048
+      - 0.05320548008744547
+      - 0.0026033257043423974
+      - 0.05512666483621341
+panda_tapemeasure_Mini_Mini_init_pose_4_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/tapemeasure_Mini_Mini_init_pose_4_labeled_left
+    encoder_domain: mini
+    decoder_domain: pose_estimation_6d_mini
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.1657257229089737
+      - 0.4611388146877289
+      - 0.3855637311935425
+      std:
+      - 0.0836595892906189
+      - 0.09059889614582062
+      - 0.0995706096291542
+    pose_dim: 6
+    label_norm:
+      mean:
+      - 0.09989395698817066
+      - 0.021306145384497256
+      - -0.06408802750999222
+      - 0.9942830964377436
+      - 0.0003524052558018331
+      - -0.0004602919658148122
+      - -0.0012062345726589576
+      - 0.9976769491300929
+      - -0.00012027942918614382
+      std:
+      - 3.980963222467427
+      - 1.528912751504208
+      - 5.221321982792847
+      - 0.006074083919210411
+      - 0.04939868659315116
+      - 0.09446514355815022
+      - 0.04936782626650371
+      - 0.0021325144137560887
+      - 0.046877561983096706
+panda_blackclampedclosed_Mini_Mini_init_pose_4_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampedclosed_Mini_Mini_init_pose_4_labeled_left
+    encoder_domain: mini
+    decoder_domain: pose_estimation_6d_mini
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.1706845909357071
+      - 0.46344971656799316
+      - 0.39518463611602783
+      std:
+      - 0.08831388503313065
+      - 0.08262699842453003
+      - 0.10061244666576385
+    pose_dim: 6
+    label_norm:
+      mean:
+      - -0.003959788797061087
+      - -0.030221286654408423
+      - -0.06952288660240995
+      - 0.9954022980559315
+      - 9.73252427559128e-05
+      - 0.0008384403252859773
+      - 0.00014940535074720767
+      - 0.9976890849231866
+      - 0.0014944899636107779
+      std:
+      - 5.428250848584187
+      - 1.4615079330797756
+      - 4.869974127880267
+      - 0.004947579896130535
+      - 0.04414702315072572
+      - 0.08485348767549608
+      - 0.04418638001513292
+      - 0.0022337947635858663
+      - 0.05154423328593209
+panda_blackmarker_Digit_Digit_init_pose_1_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/blackmarker_Digit_Digit_init_pose_1_labeled_right
+    encoder_domain: digit
+    decoder_domain: pose_estimation_6d_digit
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.3597746789455414
+      - 0.4220910668373108
+      - 0.3863634467124939
+      std:
+      - 0.18637828528881073
+      - 0.08898860961198807
+      - 0.11469487100839615
+    pose_dim: 6
+    label_norm:
+      mean:
+      - -0.03892878413209307
+      - -0.12113366147445886
+      - -0.12300137517394565
+      - 0.9870640178226379
+      - 0.0003541658994694247
+      - 0.00044936145312019773
+      - -0.00047730490010965284
+      - 0.9966856879840081
+      - 0.0005963144398303849
+      std:
+      - 7.1619876048143
+      - 1.623523145245142
+      - 8.690436487038884
+      - 0.01404915172552325
+      - 0.049344229135275974
+      - 0.15189491679284176
+      - 0.04929035179499836
+      - 0.003226440586590541
+      - 0.06463054431165977
+panda_wrench_Mini_Mini_init_pose_2_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/wrench_Mini_Mini_init_pose_2_labeled_right
+    encoder_domain: mini
+    decoder_domain: pose_estimation_6d_mini
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.2248988300561905
+      - 0.4762556552886963
+      - 0.4289960265159607
+      std:
+      - 0.1040118858218193
+      - 0.07802072912454605
+      - 0.1032293438911438
+    pose_dim: 6
+    label_norm:
+      mean:
+      - 0.21177732523946707
+      - -0.0342299367735041
+      - 0.023659208141572293
+      - 0.9916987335299298
+      - -0.00045277768916475225
+      - 0.0011216094060711385
+      - -0.0003936281101263575
+      - 0.9985486641132089
+      - 0.0006030974090561765
+      std:
+      - 3.3860903182406923
+      - 0.9960527272885948
+      - 9.036678880424196
+      - 0.009864735508879004
+      - 0.036794173437883236
+      - 0.12280486429427095
+      - 0.03688250693600473
+      - 0.0013167880450231876
+      - 0.039217259969115195
+panda_blackclampopen_Wedge_Wedge_init_pose_3_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampopen_Wedge_Wedge_init_pose_3_labeled_left
+    encoder_domain: wedge
+    decoder_domain: pose_estimation_6d_wedge
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.48467275500297546
+      - 0.44754698872566223
+      - 0.6166472434997559
+      std:
+      - 0.21966536343097687
+      - 0.1536581665277481
+      - 0.13042406737804413
+    pose_dim: 6
+    label_norm:
+      mean:
+      - -0.0628572022313054
+      - -0.06838007024547518
+      - -0.050893229519470534
+      - 0.9935144682239312
+      - 0.00017187925419345
+      - 0.0010456222012792693
+      - 0.00020800700764125058
+      - 0.9971276371024409
+      - 0.0008785465099830729
+      std:
+      - 4.778300068836367
+      - 0.7743672703261274
+      - 4.289450545897738
+      - 0.006811349648258145
+      - 0.052541040777295704
+      - 0.1006027987257892
+      - 0.05256412773928483
+      - 0.0025422812342805793
+      - 0.05446291854787529
+panda_blackclampopen_Wedge_Wedge_init_pose_3_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampopen_Wedge_Wedge_init_pose_3_labeled_right
+    encoder_domain: wedge
+    decoder_domain: pose_estimation_6d_wedge
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.33281007409095764
+      - 0.48048314452171326
+      - 0.6125444173812866
+      std:
+      - 0.10064134001731873
+      - 0.06831198930740356
+      - 0.10051707178354263
+    pose_dim: 6
+    label_norm:
+      mean:
+      - -0.025722195166028132
+      - -0.06469588874628329
+      - -0.1397491701382805
+      - 0.9936048194927886
+      - -0.0007686062483993756
+      - -0.0012145100947846463
+      - 0.0009948703736580645
+      - 0.9970563024979627
+      - 0.0012726958437825754
+      std:
+      - 4.736637754641043
+      - 0.7884932677622319
+      - 4.337792698708993
+      - 0.006580073154399241
+      - 0.053401024535457794
+      - 0.09925940814965935
+      - 0.05326317983208297
+      - 0.0026181011084358587
+      - 0.05506631772769919
+panda_gsminibox_Digit_Digit_init_pose_1_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/gsminibox_Digit_Digit_init_pose_1_labeled_left
+    encoder_domain: digit
+    decoder_domain: pose_estimation_6d_digit
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.42016997933387756
+      - 0.457429975271225
+      - 0.4393713176250458
+      std:
+      - 0.17391929030418396
+      - 0.0702960342168808
+      - 0.09980781376361847
+    pose_dim: 6
+    label_norm:
+      mean:
+      - -0.1659950349239024
+      - 0.06166823725539022
+      - -0.18060887206060186
+      - 0.9865768206635497
+      - -3.2364834035065346e-05
+      - -0.001719582367937411
+      - -1.0239408421058163e-05
+      - 0.9967561756605994
+      - -0.0014365787318553938
+      std:
+      - 3.9109918460885846
+      - 1.68176301685088
+      - 8.62667749386196
+      - 0.015916619478694966
+      - 0.03782384486507748
+      - 0.1580482106902557
+      - 0.037714598724105965
+      - 0.0033857717145660653
+      - 0.07100146485914532
+panda_blackclampedclosed_Mini_Mini_init_pose_5_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampedclosed_Mini_Mini_init_pose_5_labeled_left
+    encoder_domain: mini
+    decoder_domain: pose_estimation_6d_mini
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.173812136054039
+      - 0.4640612006187439
+      - 0.3990507125854492
+      std:
+      - 0.08795560896396637
+      - 0.08184106647968292
+      - 0.10320103168487549
+    pose_dim: 6
+    label_norm:
+      mean:
+      - -0.055115283228437076
+      - 0.029953642572314407
+      - -0.11225531975098436
+      - 0.9943448343689565
+      - 0.0003208396890966665
+      - 0.0006468332067275017
+      - -5.4999717995222474e-05
+      - 0.9978385173460267
+      - 0.0001413547473907876
+      std:
+      - 4.569301069327869
+      - 1.5892386669993646
+      - 4.77875012836481
+      - 0.0062405845896500705
+      - 0.04346020526594289
+      - 0.09669588768246268
+      - 0.043388223047836454
+      - 0.0020488532084450236
+      - 0.04931059314012449
+panda_blackclamp_Mini_Mini_init_pose_1_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclamp_Mini_Mini_init_pose_1_labeled_right
+    encoder_domain: mini
+    decoder_domain: pose_estimation_6d_mini
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.2245451956987381
+      - 0.47765594720840454
+      - 0.42400431632995605
+      std:
+      - 0.10415098071098328
+      - 0.08063487708568573
+      - 0.09976319223642349
+    pose_dim: 6
+    label_norm:
+      mean:
+      - 0.21251244685394077
+      - 0.020842939102713096
+      - -0.06458057869447534
+      - 0.9888433961431606
+      - -0.0007640515833795943
+      - -0.000669988626063504
+      - 0.0004769036420039561
+      - 0.9984459869523388
+      - -0.0003108744855776761
+      std:
+      - 3.5002711036844474
+      - 1.340572128178764
+      - 8.221926292439228
+      - 0.012852243517617422
+      - 0.04195454982246933
+      - 0.14234584936074393
+      - 0.04192480926065531
+      - 0.0014145042008093217
+      - 0.036682374583120535
+panda_printedstrawberry_Mini_Mini_init_pose_1_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/printedstrawberry_Mini_Mini_init_pose_1_labeled_right
+    encoder_domain: mini
+    decoder_domain: pose_estimation_6d_mini
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.2274872362613678
+      - 0.47810986638069153
+      - 0.4352235794067383
+      std:
+      - 0.1063542366027832
+      - 0.07576030492782593
+      - 0.10254159569740295
+    pose_dim: 6
+    label_norm:
+      mean:
+      - -0.07217134206104042
+      - 0.022095819524288532
+      - -0.0019369354819170387
+      - 0.9955836780407239
+      - 0.00047363188781231853
+      - 3.769987500428689e-05
+      - -0.0005710458187337816
+      - 0.9974004323279689
+      - -0.0005514479766045486
+      std:
+      - 3.557731215133029
+      - 0.7128647804279703
+      - 1.280572558072786
+      - 0.004467665626075271
+      - 0.05142162166149967
+      - 0.07841409988007919
+      - 0.05146718554322714
+      - 0.002371648252485843
+      - 0.050371137575105834
+panda_bluepuzzle_Digit_Digit_init_pose_2_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/bluepuzzle_Digit_Digit_init_pose_2_labeled_right
+    encoder_domain: digit
+    decoder_domain: pose_estimation_6d_digit
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.35957071185112
+      - 0.42026254534721375
+      - 0.38767707347869873
+      std:
+      - 0.19251394271850586
+      - 0.09495128691196442
+      - 0.13183341920375824
+    pose_dim: 6
+    label_norm:
+      mean:
+      - -0.22942342531823498
+      - 0.013446319720799132
+      - -0.08238853894798946
+      - 0.989829020347362
+      - 0.0005479478012640334
+      - 0.0004842737211996497
+      - 0.00039903976407182134
+      - 0.9961583358037455
+      - -0.0013782439081542963
+      std:
+      - 3.4863319399112496
+      - 1.9753909416563797
+      - 7.317958871904579
+      - 0.011891082278647516
+      - 0.04168161962516789
+      - 0.13549620089885142
+      - 0.04168722646021708
+      - 0.0038749963308405727
+      - 0.07690039514332571
+panda_greenwirestripper_Digit_Digit_init_pose_1_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/greenwirestripper_Digit_Digit_init_pose_1_labeled_right
+    encoder_domain: digit
+    decoder_domain: pose_estimation_6d_digit
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.3531765341758728
+      - 0.4205916225910187
+      - 0.37851110100746155
+      std:
+      - 0.18434672057628632
+      - 0.0847434252500534
+      - 0.11861341446638107
+    pose_dim: 6
+    label_norm:
+      mean:
+      - -0.1328027484375094
+      - 0.04128282971194402
+      - -0.1447115211693802
+      - 0.989454235088337
+      - -6.168673245325891e-05
+      - -0.0031971873809629806
+      - 0.0002367758401006228
+      - 0.9982249528457554
+      - -0.00010501027198564435
+      std:
+      - 18.91444367564654
+      - 1.9472494060680292
+      - 8.862055758323597
+      - 0.0124651670200871
+      - 0.03931873158929224
+      - 0.13881191523331443
+      - 0.0393265876606006
+      - 0.0017439820022600438
+      - 0.04469065289161983
+panda_gsminibox_Digit_Digit_init_pose_1_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/gsminibox_Digit_Digit_init_pose_1_labeled_right
+    encoder_domain: digit
+    decoder_domain: pose_estimation_6d_digit
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.355375200510025
+      - 0.4183369576931
+      - 0.377322256565094
+      std:
+      - 0.18658578395843506
+      - 0.08773398399353027
+      - 0.12443897128105164
+    pose_dim: 6
+    label_norm:
+      mean:
+      - -0.1894572175863258
+      - 0.03785799838352515
+      - -0.20153626529352017
+      - 0.9862830453166269
+      - -0.00017820547189257584
+      - 0.0006949633924115282
+      - -0.0003584968444556537
+      - 0.9967074612541655
+      - 0.0003152830644116108
+      std:
+      - 3.9774309917193627
+      - 1.6976195978472273
+      - 8.51003917690315
+      - 0.01613237938868902
+      - 0.03891977357954216
+      - 0.15959397654495056
+      - 0.039100326921334375
+      - 0.0034409263299973337
+      - 0.0709459880297352
+panda_screwdriver_Wedge_Wedge_init_pose_1_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/screwdriver_Wedge_Wedge_init_pose_1_labeled_right
+    encoder_domain: wedge
+    decoder_domain: pose_estimation_6d_wedge
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.3298151195049286
+      - 0.4918084740638733
+      - 0.6021385788917542
+      std:
+      - 0.11251013725996017
+      - 0.06601256132125854
+      - 0.0948595181107521
+    pose_dim: 6
+    label_norm:
+      mean:
+      - 0.07585559264020673
+      - 0.1026746912568411
+      - -0.11666458609405576
+      - 0.9933489455171337
+      - -0.0005141637347208681
+      - 3.998273375540215e-05
+      - -0.000570551313520836
+      - 0.9949935007829639
+      - -1.9837064488602297e-05
+      std:
+      - 3.984247715099338
+      - 1.2008017352783829
+      - 11.191528969607495
+      - 0.007374106902287966
+      - 0.054833785924713926
+      - 0.10097764577165624
+      - 0.054768798716858705
+      - 0.005960005620281099
+      - 0.08338143976602233
+panda_key1_Mini_Mini_init_pose_2_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/key1_Mini_Mini_init_pose_2_labeled_right
+    encoder_domain: mini
+    decoder_domain: pose_estimation_6d_mini
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.21065731346607208
+      - 0.4538404047489166
+      - 0.3893325626850128
+      std:
+      - 0.10152407735586166
+      - 0.10455714911222458
+      - 0.11116821318864822
+    pose_dim: 6
+    label_norm:
+      mean:
+      - 0.1510763953463666
+      - -0.0794573884500579
+      - 0.018210943103226122
+      - 0.9940769560009618
+      - 2.5481619825041023e-06
+      - 0.00039470919415798426
+      - -0.0009188590957490806
+      - 0.9971268602653601
+      - 0.0005908434943451264
+      std:
+      - 5.826380148182549
+      - 1.3162806622954402
+      - 4.70171182450333
+      - 0.0061166059280015825
+      - 0.05536563250068465
+      - 0.09331711319871645
+      - 0.055403589463207975
+      - 0.0025966316623188186
+      - 0.05158033460418434
+panda_foldingknife_Mini_Mini_init_pose_2_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/foldingknife_Mini_Mini_init_pose_2_labeled_right
+    encoder_domain: mini
+    decoder_domain: pose_estimation_6d_mini
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.21599607169628143
+      - 0.45426133275032043
+      - 0.39074206352233887
+      std:
+      - 0.10460741072893143
+      - 0.10708241909742355
+      - 0.11038181185722351
+    pose_dim: 6
+    label_norm:
+      mean:
+      - 0.033005819316725984
+      - 0.0285659969070121
+      - -0.035491120581020316
+      - 0.9934334597793111
+      - -0.00036705145747898934
+      - -0.0009852228512631925
+      - -0.0005560952264704303
+      - 0.9971618536483494
+      - -0.0005590227997269868
+      std:
+      - 5.562996395791237
+      - 1.4502897124699075
+      - 4.257385187829001
+      - 0.006827749286520711
+      - 0.05373537523651007
+      - 0.10077076405364573
+      - 0.053741661771120476
+      - 0.0027954362334996923
+      - 0.05264632187087618
+panda_blackclampclosed_Wedge_Wedge_init_pose_1_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampclosed_Wedge_Wedge_init_pose_1_labeled_left
+    encoder_domain: wedge
+    decoder_domain: pose_estimation_6d_wedge
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.4933076500892639
+      - 0.4474165737628937
+      - 0.6276432275772095
+      std:
+      - 0.21579772233963013
+      - 0.14672262966632843
+      - 0.12719814479351044
+    pose_dim: 6
+    label_norm:
+      mean:
+      - -0.09167946003494085
+      - 0.017775491100863888
+      - 0.0578123111742759
+      - 0.9942729983204622
+      - -0.0009226538109958083
+      - 0.0014439023633388106
+      - 0.0005985854188494891
+      - 0.9973573912436446
+      - 0.00024624578603115637
+      std:
+      - 5.515829571732395
+      - 1.3232523597947508
+      - 5.62335322461305
+      - 0.006005698914116551
+      - 0.050710616271985844
+      - 0.09386497560123333
+      - 0.050772104663200375
+      - 0.0024327933625643266
+      - 0.051904624983804486
+panda_redpunch_Digit_Digit_init_pose_1_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/redpunch_Digit_Digit_init_pose_1_labeled_left
+    encoder_domain: digit
+    decoder_domain: pose_estimation_6d_digit
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.42051586508750916
+      - 0.45165184140205383
+      - 0.43533456325531006
+      std:
+      - 0.16668295860290527
+      - 0.07338855415582657
+      - 0.10228043049573898
+    pose_dim: 6
+    label_norm:
+      mean:
+      - -0.027479605118381028
+      - -0.10663937669016782
+      - -0.0840937009861902
+      - 0.9902070545467905
+      - 0.0011801828413017005
+      - -0.0007185776597693767
+      - 0.0007139584100390783
+      - 0.9955825752208751
+      - 0.0009366754596628861
+      std:
+      - 4.208664431101365
+      - 2.6545069682033025
+      - 7.533165267053359
+      - 0.011311498198186979
+      - 0.04006162087269475
+      - 0.13324862656676723
+      - 0.040036897711919144
+      - 0.004579146917103787
+      - 0.08479402723164302
+panda_blackclampclosed_Mini_Mini_init_pose_1_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/blackclampclosed_Mini_Mini_init_pose_1_labeled_right
+    encoder_domain: mini
+    decoder_domain: pose_estimation_6d_mini
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.20969408750534058
+      - 0.45107850432395935
+      - 0.3844548761844635
+      std:
+      - 0.10364897549152374
+      - 0.10086628794670105
+      - 0.10830090194940567
+    pose_dim: 6
+    label_norm:
+      mean:
+      - 0.04349498631574966
+      - 0.014634829071448587
+      - -0.06196448842075314
+      - 0.9939150131298949
+      - -0.0005627844572865893
+      - -0.0005542106634021935
+      - 0.0007372529457332082
+      - 0.9974252020311416
+      - -0.00018012096246827593
+      std:
+      - 5.453862194266911
+      - 1.4024359994503068
+      - 6.2525057858063535
+      - 0.006230699847857429
+      - 0.05350870688875173
+      - 0.09607455160293829
+      - 0.05346011942683788
+      - 0.0023479781094484656
+      - 0.04773775232802926
+panda_whiteclamped_Mini_Mini_init_pose_1_labeled_left:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/whiteclamped_Mini_Mini_init_pose_1_labeled_left
+    encoder_domain: mini
+    decoder_domain: pose_estimation_6d_mini
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.16491958498954773
+      - 0.4617471396923065
+      - 0.38903728127479553
+      std:
+      - 0.08577835559844971
+      - 0.08783769607543945
+      - 0.1000705361366272
+    pose_dim: 6
+    label_norm:
+      mean:
+      - 0.011010599993609801
+      - 0.016765473357171424
+      - -0.004716828105991198
+      - 0.9939456343922406
+      - -0.00021303548969657312
+      - -0.0006046771750520659
+      - 0.00048540746658901616
+      - 0.9975726999680994
+      - 0.00041480104754430266
+      std:
+      - 5.707930690952535
+      - 1.3761830704598894
+      - 5.181045669161802
+      - 0.006322406713853508
+      - 0.04888189947546457
+      - 0.09819496896993875
+      - 0.04876956561180318
+      - 0.002222904585394596
+      - 0.04964764610009055
+panda_tapemeasure_Mini_Mini_init_pose_2_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/tapemeasure_Mini_Mini_init_pose_2_labeled_right
+    encoder_domain: mini
+    decoder_domain: pose_estimation_6d_mini
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.18961915373802185
+      - 0.45349735021591187
+      - 0.385844349861145
+      std:
+      - 0.09253636002540588
+      - 0.10180454701185226
+      - 0.10736275464296341
+    pose_dim: 6
+    label_norm:
+      mean:
+      - -0.06672461156456962
+      - -0.04338909077012708
+      - -0.10179787780812082
+      - 0.9950210515829229
+      - -0.0004650514984199168
+      - 0.0005009895506777909
+      - 4.166677581020337e-05
+      - 0.9970322563304879
+      - -0.00012506009998117744
+      std:
+      - 4.914900769803514
+      - 1.293362706993627
+      - 5.178767495862509
+      - 0.004850569686846919
+      - 0.054409734535494046
+      - 0.08335881719944495
+      - 0.054316818707281424
+      - 0.0026405041668190964
+      - 0.05449195723826127
+panda_wrench_Mini_Mini_init_pose_3_labeled_right:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.DoubleTowerPoseEstimationDataset
+    data_dir: data/FoundationTactile/panda_warped/wrench_Mini_Mini_init_pose_3_labeled_right
+    encoder_domain: mini
+    decoder_domain: pose_estimation_6d_mini
+    random_resize_crop: false
+    random_hv_flip_prob: 0.0
+    color_jitter: null
+    img_norm:
+      mean:
+      - 0.2302057147026062
+      - 0.4775136113166809
+      - 0.4285425841808319
+      std:
+      - 0.10802163183689117
+      - 0.08327475935220718
+      - 0.10208170115947723
+    pose_dim: 6
+    label_norm:
+      mean:
+      - 0.3460820965883884
+      - 0.12149034345279554
+      - -1.1826545175694627
+      - 0.9753480604956192
+      - -0.0020492362476800282
+      - 0.0011085865153669591
+      - -0.0018575651740634679
+      - 0.9988523112099905
+      - 0.0009758974339878183
+      std:
+      - 11.819022143033111
+      - 1.7897310130564144
+      - 6.572005226402016
+      - 0.03221743572852988
+      - 0.029508213445427575
+      - 0.21629155029387542
+      - 0.029321621125427386
+      - 0.0012143024581533616
+      - 0.03779451640622178

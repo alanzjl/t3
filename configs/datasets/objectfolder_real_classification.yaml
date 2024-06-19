@@ -1,0 +1,19 @@
+objectfolder_material_class:
+  activate: true 
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerClassificationDataset
+    label_process_func: t3.task_utils.process_objectfolder_real_label
+    data_dir: "data/FoundationTactile/objectfolder_real"
+    encoder_domain: "gs_black"
+    decoder_domain: "cls_objectfolder"
+    random_resize_crop: true
+    random_hv_flip_prob: 0.5
+    color_jitter:
+      brightness: 0.4
+      contrast: 0.4
+      saturation: 0.5
+      hue: 0.3
+    img_norm:
+      mean: [0.46676, 0.45028, 0.45292]
+      std: [0.08171, 0.06973, 0.08618]

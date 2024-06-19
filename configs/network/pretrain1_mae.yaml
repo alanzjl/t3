@@ -1,0 +1,103 @@
+# Network configuration for pretraining I with MAE
+
+# Network size corresponds to "t3_medium" but can be overwritten in code
+patch_size: 16
+encoder_embed_dim: 768
+encoder_heads: 12
+encoder_depth: 3
+trunk_depth: 9
+mask_ratio: 0.4
+
+encoders:
+  gs_360_v2:
+    _target_: t3.models.MAEViTEncoder
+    mask_ratio: ${network.mask_ratio}
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: ${network.encoder_depth}
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+  
+  gs_green:
+    _target_: t3.models.MAEViTEncoder
+    mask_ratio: ${network.mask_ratio}
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: ${network.encoder_depth}
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+
+  gs_black:
+    _target_: t3.models.MAEViTEncoder
+    mask_ratio: ${network.mask_ratio}
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: ${network.encoder_depth}
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+  
+  gs_tag: # for touch-and-go
+    _target_: t3.models.MAEViTEncoder
+    mask_ratio: ${network.mask_ratio}
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: ${network.encoder_depth}
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+  
+  digit:
+    _target_: t3.models.MAEViTEncoder
+    mask_ratio: ${network.mask_ratio}
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: ${network.encoder_depth}
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+  
+  mini:
+    _target_: t3.models.MAEViTEncoder
+    mask_ratio: ${network.mask_ratio}
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: ${network.encoder_depth}
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+  
+  wedge:
+    _target_: t3.models.MAEViTEncoder
+    mask_ratio: ${network.mask_ratio}
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: ${network.encoder_depth}
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+
+  finray:
+    _target_: t3.models.MAEViTEncoder
+    mask_ratio: ${network.mask_ratio}
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: ${network.encoder_depth}
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+    
+shared_trunk:
+  _target_: t3.models.TransformerTrunk
+  embed_dim: ${network.encoder_embed_dim}
+  depth: ${network.trunk_depth}
+  num_heads: ${network.encoder_heads}
+  mlp_ratio: 4.
+
+decoders:
+  mae_recon_single:
+    _target_: t3.models.MAEViTDecoder
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    decoder_embed_dim: 512
+    decoder_depth: 8
+    decoder_num_heads: 16
+    mlp_ratio: 4. 
+    loss_func:
+      _target_: t3.models.MAEReconLoss
+      patch_size: 16
+      norm_pix_loss: true # true for better representation learning, false for pixel-based loss for better reconstruction aka visualization

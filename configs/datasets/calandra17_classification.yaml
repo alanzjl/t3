@@ -1,0 +1,19 @@
+calandra17_class:
+  activate: true 
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerClassificationDataset
+    label_process_func: t3.task_utils.process_calandra17_obj_label
+    data_dir: "data/FoundationTactile/calandra17"
+    encoder_domain: "gs_green"
+    decoder_domain: "cls_calandra17"
+    random_resize_crop: true
+    random_hv_flip_prob: 0.5
+    color_jitter:
+      brightness: 0.4
+      contrast: 0.4
+      saturation: 0.5
+      hue: 0.3
+    img_norm:
+      mean: [0.27307, 0.27307, 0.27307]
+      std: [0.26252, 0.28064, 0.30760]

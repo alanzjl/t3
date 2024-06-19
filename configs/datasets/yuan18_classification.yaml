@@ -1,0 +1,59 @@
+yuan18_textile_type_class:
+  activate: true 
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerClassificationDataset
+    label_process_func: t3.task_utils.process_yuan18_textile_type_label
+    data_dir: "data/FoundationTactile/yuan18"
+    encoder_domain: "gs_green"
+    decoder_domain: "cls_yuan18_textile_type"
+    random_resize_crop: true
+    random_hv_flip_prob: 0.5
+    color_jitter:
+      brightness: 0.4
+      contrast: 0.4
+      saturation: 0.5
+      hue: 0.3
+    img_norm:
+      mean: [0.41745, 0.42082, 0.40049]
+      std: [0.11456, 0.11639, 0.10868]
+  
+yuan18_smoothness_class:
+  activate: true 
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerClassificationDataset
+    label_process_func: t3.task_utils.process_yuan18_smoothness_label
+    data_dir: "data/FoundationTactile/yuan18"
+    encoder_domain: "gs_green"
+    decoder_domain: "cls_yuan18_smoothness"
+    random_resize_crop: true
+    random_hv_flip_prob: 0.5
+    color_jitter:
+      brightness: 0.4
+      contrast: 0.4
+      saturation: 0.5
+      hue: 0.3
+    img_norm:
+      mean: [0.41745, 0.42082, 0.40049]
+      std: [0.11456, 0.11639, 0.10868]
+
+yuan18_fuzziness_class:
+  activate: true 
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerClassificationDataset
+    label_process_func: t3.task_utils.process_yuan18_fuzziness_label
+    data_dir: "data/FoundationTactile/yuan18"
+    encoder_domain: "gs_green"
+    decoder_domain: "cls_yuan18_fuzziness"
+    random_resize_crop: true
+    random_hv_flip_prob: 0.5
+    color_jitter:
+      brightness: 0.4
+      contrast: 0.4
+      saturation: 0.5
+      hue: 0.3
+    img_norm:
+      mean: [0.41745, 0.42082, 0.40049]
+      std: [0.11456, 0.11639, 0.10868]

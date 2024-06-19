@@ -1,0 +1,9 @@
+data
+outputs
+*.egg-info
+*.egg
+__pycache__
+wandb
+checkpoints
+checkpoints_supercloud
+cnc_Wedge

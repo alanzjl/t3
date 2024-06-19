@@ -1,0 +1,177 @@
+# variables should start with VAR_ and be defined in the same file
+VAR_random_resize_crop: true
+VAR_random_hv_flip_prob: 0.5
+VAR_color_jitter:
+  brightness: 0.4
+  contrast: 0.4
+  saturation: 0.5
+  hue: 0.3
+
+# tippur23_1000Cylinder:
+#   activate: true  # if false, this dataset will not be used
+#   eval_only: false  # if true, this dataset will not be used for training
+#   data_loader:
+#     _target_: t3.data_loader.SingleTowerMAEDataset
+#     data_dir: "data/FoundationTactile/tippur23_1000Cylinder"
+#     encoder_domain: "gs_360_v2"
+#     decoder_domain: "mae_recon_single"
+#     random_resize_crop: true
+#     random_hv_flip_prob: 0.5
+#     color_jitter:
+#       brightness: 0.2
+#       contrast: 0.2
+#       saturation: 0.2
+#       hue: 0.1
+#     img_norm:
+#       mean: [0.00174, 0.62280, 0.11578]
+#       std: [0.01036, 0.07555, 0.06993]
+
+tippur23_cylv0:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: "data/FoundationTactile/tippur23_cylv0"
+    encoder_domain: "gs_360_v2"
+    decoder_domain: "mae_recon_single"
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean: [0.48141, 0.24831, 0.30964]
+      std: [0.07714, 0.07175, 0.07466]
+      
+tippur23_cylv1:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: "data/FoundationTactile/tippur23_cylv1"
+    encoder_domain: "gs_360_v2"
+    decoder_domain: "mae_recon_single"
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean: [0.26948, 0.23950, 0.25199]
+      std: [0.07708, 0.07323, 0.08599]
+
+tvl:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: "data/FoundationTactile/tvl"
+    encoder_domain: "digit"
+    decoder_domain: "mae_recon_single"
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean: [0.42094, 0.44041, 0.44151]
+      std: [0.14661, 0.08972, 0.09041]
+
+visgel_downsampled:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: "data/FoundationTactile/visgel_downsampled"
+    encoder_domain: "gs_green"
+    decoder_domain: "mae_recon_single"
+    random_resize_crop: false
+    random_hv_flip_prob: 0
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean: [0.36917, 0.51738, 0.51782]
+      std: [0.13530, 0.11039, 0.10001]
+
+calandra17:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: "data/FoundationTactile/calandra17"
+    encoder_domain: "gs_green"
+    decoder_domain: "mae_recon_single"
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean: [0.27307, 0.27307, 0.27307]
+      std: [0.26252, 0.28064, 0.30760]
+
+touch_and_go:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: "data/FoundationTactile/touch_and_go"
+    encoder_domain: "gs_tag"
+    decoder_domain: "mae_recon_single"
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean: [0.51808, 0.50300, 0.51457]
+      std: [0.13893, 0.11343, 0.13497]
+
+yuan_18:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: "data/FoundationTactile/yuan18"
+    encoder_domain: "gs_green"
+    decoder_domain: "mae_recon_single"
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean: [0.41745, 0.42082, 0.40049]
+      std: [0.11456, 0.11639, 0.10868]
+
+ycbsight_real:
+  activate: true
+  eval_only: true
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: "data/FoundationTactile/ycbsight_real"
+    encoder_domain: "gs_green"
+    decoder_domain: "mae_recon_single"
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: null
+    img_norm:
+      mean: [0.51040, 0.51558, 0.57299]
+      std: [0.06538, 0.09097, 0.12421]
+
+ycbsight_sim:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: "data/FoundationTactile/ycbsight_sim"
+    encoder_domain: "gs_green"
+    decoder_domain: "mae_recon_single"
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean: [0.52429, 0.51465, 0.60872]
+      std: [0.06524, 0.08824, 0.11888]
+
+objectfolder_real:
+  activate: true
+  eval_only: false
+  data_loader:
+    _target_: t3.data_loader.SingleTowerMAEDataset
+    data_dir: "data/FoundationTactile/objectfolder_real"
+    encoder_domain: "gs_black"
+    decoder_domain: "mae_recon_single"
+    random_resize_crop: ${datasets.VAR_random_resize_crop}
+    random_hv_flip_prob: ${datasets.VAR_random_hv_flip_prob}
+    color_jitter: ${datasets.VAR_color_jitter}
+    img_norm:
+      mean: [0.46676, 0.45028, 0.45292]
+      std: [0.08171, 0.06973, 0.08618]

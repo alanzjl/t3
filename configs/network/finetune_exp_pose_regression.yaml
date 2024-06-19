@@ -1,0 +1,67 @@
+# Example network configuration for a pose estimation finetune task
+
+# Network size corresponds to "t3_medium" but can be overwritten in code
+patch_size: 16
+encoder_embed_dim: 768
+encoder_heads: 12
+pooling: "none"
+encoder_depth: 3
+trunk_depth: 9
+
+encoders:
+  wedge:
+    _target_: t3.models.ViTEncoder
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: ${network.encoder_depth}
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+  finray:
+    _target_: t3.models.ViTEncoder
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: ${network.encoder_depth}
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+  svelte:
+    _target_: t3.models.ViTEncoder
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: ${network.encoder_depth}
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+  densetact:
+    _target_: t3.models.ViTEncoder
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: ${network.encoder_depth}
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+  mini:
+    _target_: t3.models.ViTEncoder
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: ${network.encoder_depth}
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+
+shared_trunk:
+  _target_: t3.models.TransformerTrunk
+  embed_dim: ${network.encoder_embed_dim}
+  depth: ${network.trunk_depth}
+  num_heads: ${network.encoder_heads}
+  mlp_ratio: 4.
+  pooling_type: ${network.pooling}
+
+decoders:
+  pose_estimation_3d:
+    _target_: t3.models.CNNFCDecoder
+    inplanes: ${network.encoder_embed_dim}
+    fc_hidden_dims: [256, 64]
+    output_dim: 3 # using d9 representation
+    stride: 2
+    dropout_p: 0.1
+    tanh_end: false
+    transformer_upstream: true
+    loss_func:
+      _target_: torch.nn.MSELoss

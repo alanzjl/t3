@@ -1,0 +1,75 @@
+# Network configuration for pretraining I with Cross MAE (https://crossmae.github.io/)
+# Not used in the paper, but can be used for comparison
+
+# Network size corresponds to "t3_medium" but can be overwritten in code
+patch_size: 16
+encoder_embed_dim: 768
+encoder_heads: 12
+mask_ratio: 0.3
+
+encoders:
+  gs_360_v2:
+    _target_: t3.models.MAEViTEncoder
+    mask_ratio: ${network.mask_ratio}
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: 3
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+  
+  gs_green:
+    _target_: t3.models.MAEViTEncoder
+    mask_ratio: ${network.mask_ratio}
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: 3
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+  
+  digit:
+    _target_: t3.models.MAEViTEncoder
+    mask_ratio: ${network.mask_ratio}
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: 3
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+
+  mini:
+    _target_: t3.models.MAEViTEncoder
+    mask_ratio: ${network.mask_ratio}
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: 3
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+  
+  wedge:
+    _target_: t3.models.MAEViTEncoder
+    mask_ratio: ${network.mask_ratio}
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    depth: 3
+    num_heads: ${network.encoder_heads}
+    mlp_ratio: 4. 
+
+shared_trunk:
+  _target_: t3.models.TransformerTrunk
+  embed_dim: ${network.encoder_embed_dim}
+  depth: 9
+  num_heads: ${network.encoder_heads}
+  mlp_ratio: 4.
+
+decoders:
+  mae_recon_single:
+    _target_: t3.models.CrossMAEViTDecoder
+    patch_size: ${network.patch_size}
+    embed_dim: ${network.encoder_embed_dim}
+    decoder_embed_dim: 512
+    decoder_depth: 8
+    decoder_num_heads: 16
+    mlp_ratio: 4. 
+    loss_func:
+      _target_: t3.models.MAEReconLoss
+      patch_size: 16
+      norm_pix_loss: false # true for better representation learning, false for pixel-based loss for better reconstruction aka visualization

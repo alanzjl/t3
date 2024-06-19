@@ -1,0 +1,19 @@
+touch_and_go_classification:
+  activate: true  # if false, this dataset will not be used
+  eval_only: false  # if true, this dataset will not be used for training
+  data_loader:
+    _target_: t3.data_loader.SingleTowerClassificationDataset
+    label_process_func: t3.task_utils.process_touch_and_go_label
+    data_dir: "data/FoundationTactile/touch_and_go"
+    encoder_domain: "gs_tag"
+    decoder_domain: "cls_touch_and_go"
+    random_resize_crop: true
+    random_hv_flip_prob: 0.5
+    color_jitter:
+      brightness: 0.4
+      contrast: 0.4
+      saturation: 0.5
+      hue: 0.3
+    img_norm:
+      mean: [0.51808, 0.50300, 0.51457]
+      std: [0.13893, 0.11343, 0.13497]
