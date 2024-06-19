@@ -7,8 +7,8 @@ name = "t3"
 version = "2024.5.30"
 requires-python = ">= 3.8"
 dependencies = [
-    "torch == 2.1.0",
-    "torchvision == 0.16",
+    "torch >= 2.1.0",
+    "torchvision >= 0.16",
     "numpy",
     "hydra-core",
     "tqdm",
