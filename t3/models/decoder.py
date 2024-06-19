@@ -12,7 +12,7 @@ from typing import Literal
 
 import torch
 import torch.nn as nn
-from .nn_utils import makeMLP, get_2d_sincos_pos_embed, CrossAttentionBlock
+from .nn_utils import makeMLP, get_2d_sincos_pos_embed, CrossAttentionBlock, get_device
 import timm.models.vision_transformer as timm_vit
 from torchvision.models.resnet import BasicBlock
 
@@ -37,7 +37,7 @@ class Decoder(nn.Module):
     def load(self, path):
         kwargs = {}
         if not torch.cuda.is_available():
-            kwargs['map_location'] = 'cpu'
+            kwargs['map_location'] = get_device()
         if os.path.exists(path):
             logging(f"Loading decoder from weights from {path}", True, "green")
             self.load_state_dict(torch.load(path, **kwargs))

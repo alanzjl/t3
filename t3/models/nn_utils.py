@@ -13,6 +13,16 @@ from timm.layers import Mlp, DropPath
 from typing import Optional, Tuple
 import numpy as np
 
+def get_device():
+    if torch.cuda.is_available():
+        device = "cuda:0"
+    elif torch.backends.mps.is_available():
+        # Apple Silicon
+        device = "mps"
+    else:
+        device = "cpu"
+    return device
+
 def makeMLP(input_dim,
             output_dim,
             hidden_dims,

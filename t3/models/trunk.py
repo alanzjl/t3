@@ -10,7 +10,7 @@ import os
 import torch
 from torch import nn
 from typing import Literal
-from .nn_utils import makeMLP
+from .nn_utils import makeMLP, get_device
 from t3.utils import logging
 import timm.models.vision_transformer as timm_vit
 
@@ -32,7 +32,7 @@ class Trunk(nn.Module):
     def load(self, path):
         kwargs = {}
         if not torch.cuda.is_available():
-            kwargs['map_location'] = 'cpu'
+            kwargs['map_location'] = get_device()
         if os.path.exists(path):
             logging(f"Loading trunk from weights from {path}", True, "green")
             self.load_state_dict(torch.load(path, **kwargs))

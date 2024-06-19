@@ -3,7 +3,7 @@ import torch
 from t3.models import T3
 from t3.utils import logging
 from t3.data_loader import WeightedDataLoader
-from t3.models.nn_utils import mae_unpatchify, cross_mae_unpatchify, mae_unpatchify_pred_only, mae_apply_patchified_mask
+from t3.models.nn_utils import mae_unpatchify, cross_mae_unpatchify, mae_unpatchify_pred_only, mae_apply_patchified_mask, get_device
 import hydra
 from omegaconf import OmegaConf
 import numpy as np
@@ -38,13 +38,7 @@ class T3Pretrain:
 
         self.min_avg_val_loss = np.inf
 
-        if torch.cuda.is_available():
-            self.device = "cuda:0"
-        elif torch.backends.mps.is_available():
-            # Apple Silicon
-            self.device = "mps"
-        else:
-            self.device = "cpu"
+        self.device = get_device()
         
         if run_id is None:
             self.run_id = self.gen_run_id()

@@ -14,7 +14,7 @@ import torch.nn as nn
 
 import timm.models.vision_transformer as timm_vit
 from functools import partial
-from .nn_utils import makeCNN, findFlattenedSize, get_2d_sincos_pos_embed
+from .nn_utils import makeCNN, findFlattenedSize, get_2d_sincos_pos_embed, get_device
 
 from t3.utils import logging
 
@@ -36,7 +36,7 @@ class Encoder(nn.Module):
     def load(self, path):
         kwargs = {}
         if not torch.cuda.is_available():
-            kwargs['map_location'] = 'cpu'
+            kwargs['map_location'] = get_device()
         if os.path.exists(path):
             logging(f"Loading encoder from weights from {path}", True, "green")
             self.load_state_dict(torch.load(path, **kwargs))
