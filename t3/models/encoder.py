@@ -34,15 +34,18 @@ class Encoder(nn.Module):
         torch.save(self.state_dict(), path)
 
     def load(self, path):
+        kwargs = {}
+        if not torch.cuda.is_available():
+            kwargs['map_location'] = 'cpu'
         if os.path.exists(path):
             logging(f"Loading encoder from weights from {path}", True, "green")
-            self.load_state_dict(torch.load(path))
+            self.load_state_dict(torch.load(path, **kwargs))
         else:
             # try to finetune from gs_green if it exists
             gs_green_path = path[:path.rfind('/')] + '/gs_green.pth'
             if os.path.exists(gs_green_path):
                 logging(f"Encoder weights not found at {path}. Loading from gs_green", True, "warning")
-                self.load_state_dict(torch.load(gs_green_path))
+                self.load_state_dict(torch.load(gs_green_path, **kwargs))
             else: # if gs_green also doesn't exist, use random initialization
                 logging(f"Encoder weights not found at {path}. Skipping", True, "warning")
 

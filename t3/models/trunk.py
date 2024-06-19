@@ -30,9 +30,12 @@ class Trunk(nn.Module):
         torch.save(self.state_dict(), path)
     
     def load(self, path):
+        kwargs = {}
+        if not torch.cuda.is_available():
+            kwargs['map_location'] = 'cpu'
         if os.path.exists(path):
             logging(f"Loading trunk from weights from {path}", True, "green")
-            self.load_state_dict(torch.load(path))
+            self.load_state_dict(torch.load(path, **kwargs))
         else:
             logging(f"Trunk weights not found at {path}. Skipping", True, "warning")
 
