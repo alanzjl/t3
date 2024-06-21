@@ -3,7 +3,7 @@
 ![img](https://t3.alanz.info/imgs/archi_compact.png)
 
 [![Paper](https://badgen.net/badge/icon/arXiv?icon=awesome&label&color=red)](https://arxiv.org/abs/2406.13640)
-[![Repo](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://github.com/alanzjl/t3_release)
+[![Repo](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://github.com/alanzjl/t3)
 [![Colab](https://badgen.net/badge/icon/Colab?icon=terminal&label&color=yellow)](https://colab.research.google.com/drive/1MmO9w1y59Gy6ds0iKlW04olszGko56Vf?usp=sharing)
 [![Huggingface](https://badgen.net/badge/icon/Dataset&nbsp;\&&nbsp;Checkpoints?label&color=cyan)](https://huggingface.co/datasets/alanz-mit/FoundationTactile)
 
@@ -23,8 +23,8 @@ T3 extracts the common representation that is sharable between different camera-
 ## Installation
 
 ```sh
-git clone https://github.com/alanzjl/t3_release
-cd t3_release
+git clone https://github.com/alanzjl/t3
+cd t3
 pip install -e .
 ```
 
